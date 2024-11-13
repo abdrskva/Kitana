@@ -1,0 +1,121 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Шапка */
+header {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Герой-секция */
+.hero {
+    background-color: #D4EDB0; /* Фисташковый фон */
+    padding: 80px 20px;
+    text-align: center;
+    color: #333;
+    background-image: url('https://via.placeholder.com/1600x800'); /* Можно использовать красивое изображение */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #2e7d32; /* Изумрудный цвет для заголовка */
+}
+
+.hero-text p {
+    font-size: 1.4em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    margin-top: 30px;
+}
+
+.cta-btn {
+    background-color: #2e7d32; /* Изумрудный цвет для кнопок */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #1b5e20; /* Тёмный изумрудный оттенок при наведении */
+}
+
+/* Продукты */
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    padding: 0 20px;
+}
+
+.product-card {
+    text-align: center;
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1.1em;
+}
