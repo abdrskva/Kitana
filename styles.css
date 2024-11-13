@@ -1,95 +1,112 @@
-/* Подключение шрифта */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/* Базовые стили */
+/* Основные стили страницы */
 body {
-    font-family: 'Roboto', sans-serif; /* Применяем строгий шрифт */
-    background-color: #f7e5e5; /* Светлый бежевый цвет фона */
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8; /* Светлый фон */
     margin: 0;
     padding: 0;
+    color: #333;
+}
+
+/* Контейнер для контента */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
     text-align: center;
 }
 
-.container {
-    padding: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Стиль для заголовка */
-h1 {
-    color: #800020; /* Цвет бургунди */
-    font-size: 2.8em;
+/* Логотип */
+.logo img {
+    width: 150px;
+    height: auto;
     margin-bottom: 20px;
-    margin-top: 20px; /* Подняли заголовок */
 }
 
-/* Стиль для основного текста */
+/* Заголовок */
+h1 {
+    color: #800020; /* Бургундский цвет */
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Описание */
 p {
-    font-size: 1.2em;
-    color: #555;
+    font-size: 18px;
     line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Текст с акцентом */
+.highlight-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #800020; /* Бургундский цвет */
+    margin-top: 20px;
 }
 
 /* Кнопки */
 .cta-buttons {
-    margin-top: 30px;
     display: flex;
-    flex-direction: column; /* Кнопки будут выстраиваться в колонку */
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
 }
 
 .cta-btn {
-    background-color: #800020;
-    color: white;
-    padding: 15px 25px;
-    margin: 10px 0;
+    background-color: #f1c0d6; /* Нежно-розовый цвет */
+    color: #800020; /* Бургундский текст */
+    padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1em;
-    font-weight: bold; /* Сделать текст жирным */
-    display: block;
-    width: 100%; /* Кнопки будут занимать всю ширину */
-    max-width: 300px; /* Ограничение ширины кнопки на больших экранах */
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .cta-btn:hover {
-    background-color: #70001b;
+    background-color: #e2a1b2; /* Темнее розовый при наведении */
+    color: white;
 }
 
-/* Контактная информация */
+/* Информация о контактах */
 .contact-info {
-    margin-top: 50px;
-    font-size: 1.1em;
+    margin-top: 40px;
+    font-size: 18px;
+    color: #333;
 }
 
-.contact-info a {
-    color: #800020;
+.contact-info p {
+    margin: 10px 0;
+}
+
+/* Устранение лишних отступов у ссылок */
+a {
     text-decoration: none;
 }
 
-/* Логотип Instagram */
-.logo img {
-    width: 100px; /* Устанавливаем размер изображения */
-    height: auto;
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-/* Адаптивность для мобильных устройств */
+/* Мобильная версия */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2em;
+        font-size: 28px;
     }
-    
+
     p {
-        font-size: 1em;
+        font-size: 16px;
     }
-    
+
+    .cta-buttons {
+        gap: 15px;
+    }
+
     .cta-btn {
-        padding: 12px 20px;
-        font-size: 0.9em;
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .contact-info {
+        font-size: 16px;
     }
 }
