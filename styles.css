@@ -27,22 +27,24 @@ p {
     margin: 20px 0;
 }
 
-.handwritten-text {
+/* Стили для выделенного текста */
+.highlighted-text {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #B25C56; /* Цвет бургунди */
     margin-top: 20px;
 }
 
-/* Стили для логотипа Instagram */
-.instagram-logo {
-    width: 60px; /* Размер логотипа */
+/* Стили для логотипа KITANA */
+.kitana-logo {
+    width: 150px; /* Размер логотипа */
     height: auto;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
+    border-radius: 50%; /* Закругление логотипа */
 }
 
-.instagram-logo:hover {
+.kitana-logo:hover {
     transform: scale(1.1); /* Увеличение логотипа при наведении */
 }
 
