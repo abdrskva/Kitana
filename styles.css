@@ -4,7 +4,7 @@
 /* Базовые стили */
 body {
     font-family: 'Roboto', sans-serif; /* Применяем строгий шрифт */
-    background-color: #fff5f5;
+    background-color: #f7e5e5; /* Светлый бежевый цвет фона */
     color: #333;
     margin: 0;
     padding: 0;
@@ -58,22 +58,6 @@ p {
     background-color: #70001b;
 }
 
-/* Кнопка Instagram */
-.instagram-button {
-    background-color: #800020;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: bold; /* Жирный шрифт */
-    margin-top: 50px; /* Увеличиваем отступ сверху, чтобы кнопка не сливалась */
-    border-radius: 5px;
-}
-
-.instagram-button:hover {
-    background-color: #70001b;
-}
-
 /* Контактная информация */
 .contact-info {
     margin-top: 50px;
@@ -83,6 +67,15 @@ p {
 .contact-info a {
     color: #800020;
     text-decoration: none;
+}
+
+/* Логотип Instagram */
+.logo img {
+    width: 100px; /* Устанавливаем размер изображения */
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 /* Адаптивность для мобильных устройств */
@@ -98,10 +91,5 @@ p {
     .cta-btn {
         padding: 12px 20px;
         font-size: 0.9em;
-    }
-    
-    .instagram-button {
-        padding: 12px 20px;
-        font-size: 1em;
     }
 }
