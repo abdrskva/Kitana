@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Изменен шрифт на Poppins */
 }
 
 /* Шапка */
@@ -16,7 +16,7 @@ header {
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
@@ -27,25 +27,26 @@ header p {
 
 /* Герой-секция */
 .hero {
-    background-color: #D4EDB0; /* Фисташковый фон */
+    background-color: #A8D5BA; /* Мятный фон */
     padding: 80px 20px;
     text-align: center;
     color: #333;
-    background-image: url('https://via.placeholder.com/1600x800'); /* Можно использовать красивое изображение */
+    background-image: url('https://via.placeholder.com/1600x800'); /* Можете заменить на ваше изображение */
     background-size: cover;
     background-position: center;
 }
 
 .hero-text h2 {
-    font-size: 3.5em;
+    font-size: 3em;
     margin-bottom: 20px;
-    color: #2e7d32; /* Изумрудный цвет для заголовка */
+    color: #FF6F61; /* Трендовый коралловый цвет */
 }
 
 .hero-text p {
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 20px;
+    color: #555; /* Тёмно-серый для текста */
 }
 
 .cta-buttons {
@@ -53,7 +54,7 @@ header p {
 }
 
 .cta-btn {
-    background-color: #2e7d32; /* Изумрудный цвет для кнопок */
+    background-color: #FF6F61; /* Теплый коралловый */
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -64,7 +65,7 @@ header p {
 }
 
 .cta-btn:hover {
-    background-color: #1b5e20; /* Тёмный изумрудный оттенок при наведении */
+    background-color: #D45B56; /* Темнее коралловый оттенок */
 }
 
 /* Продукты */
