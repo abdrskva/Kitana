@@ -1,177 +1,78 @@
-/* Общие стили */
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Изменен шрифт на Poppins */
+    font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #f5f5f5; /* Светлый фон страницы */
-    color: #333;
-}
-
-/* Шапка */
-header {
-    background-color: #800020; /* Бургунди */
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
-    font-weight: 300;
-}
-
-/* Герой-секция */
-.hero {
-    background-color: #F8E1E1; /* Нежно-розовый фон */
-    padding: 80px 20px;
-    text-align: center;
-    color: #333;
-    background-image: url('https://via.placeholder.com/1600x800'); /* Можете заменить на ваше изображение */
-    background-size: cover;
-    background-position: center;
-}
-
-.hero-text h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #800020; /* Бургунди */
-}
-
-.hero-text p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #555; /* Тёмно-серый для текста */
-}
-
-.cta-buttons {
-    margin-top: 30px;
-}
-
-.cta-btn {
-    background-color: #800020; /* Бургунди */
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 10px;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-}
-
-.cta-btn:hover {
-    background-color: #5c001e; /* Темнее бургунди при наведении */
-}
-
-/* Продукты */
-.products {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 50px 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8e9ef;
+    color: #4c0b1f;
 }
 
-.product-card {
+.container {
     text-align: center;
-    width: 30%;
-    background-color: #ffffff;
+    max-width: 600px;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+.container h1 {
+    font-size: 24px;
+    color: #8b1d37;
 }
 
-.product-card img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
+.container p {
+    font-size: 16px;
+    margin: 15px 0;
+    color: #6b0f28;
 }
 
-.product-card h3 {
-    font-size: 1.6em;
-    margin-bottom: 15px;
-    color: #333;
+.logo {
+    width: 150px;
+    height: 150px;
+    background: url('https://via.placeholder.com/150') center center/cover no-repeat;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 3px solid #8b1d37;
 }
 
-.product-card p {
-    font-size: 1.1em;
-    color: #666;
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: #8b1d37;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-/* Подвал */
-footer {
-    background-color: #800020; /* Бургунди */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+.button:hover {
+    background-color: #6b0f28;
 }
 
-footer p {
-    font-size: 1.1em;
+.contact-info {
+    margin-top: 15px;
+    font-size: 14px;
 }
 
-/* Адаптивность для мобильных */
-@media (max-width: 768px) {
-    .hero-text h2 {
-        font-size: 2em;
-    }
-
-    .hero-text p {
-        font-size: 1.1em;
-    }
-
-    .cta-btn {
-        padding: 12px 20px;
-        font-size: 1em;
-    }
-
-    .products {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product-card {
-        width: 80%;
-    }
+.contact-info a {
+    color: #8b1d37;
+    text-decoration: none;
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 2em;
-    }
-
-    header p {
-        font-size: 1em;
-    }
-
-    .hero-text h2 {
-        font-size: 1.8em;
-    }
-
-    .cta-btn {
-        padding: 10px 15px;
-        font-size: 0.9em;
-    }
-
-    .product-card {
-        width: 90%;
-    }
+.contact-info a:hover {
+    text-decoration: underline;
 }
