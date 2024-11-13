@@ -1,8 +1,8 @@
 /* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #800020; /* Burgundy color */
-    color: #fff; /* White text color for contrast */
+    background-color: #f1d0d6; /* Light burgundy background */
+    color: #333; /* Dark text for good contrast */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,7 +20,7 @@ body {
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #800020; /* Burgundy color for headings */
     font-weight: bold;
 }
 
@@ -29,13 +29,13 @@ p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #f7f7f7; /* Light grey text for better readability */
+    color: #555; /* Slightly lighter text color for readability */
 }
 
 /* Buttons */
 .cta-btn {
-    background-color: #fff; /* White background for buttons */
-    color: #800020; /* Burgundy text */
+    background-color: #800020; /* Burgundy color for buttons */
+    color: #fff; /* White text on buttons */
     padding: 15px 25px;
     text-decoration: none;
     font-weight: bold;
@@ -46,15 +46,15 @@ p {
 }
 
 .cta-btn:hover {
-    background-color: #800020; /* Burgundy background on hover */
-    color: #fff; /* White text on hover */
+    background-color: #a32033; /* Lighter shade of burgundy for hover effect */
+    color: #fff;
     transform: scale(1.05); /* Slightly grow the button on hover */
 }
 
 /* Contact info section */
 .contact-info {
     margin-top: 30px;
-    color: #f7f7f7;
+    color: #800020; /* Burgundy color for the contact section text */
 }
 
 .contact-info p {
@@ -64,7 +64,7 @@ p {
 
 /* Address and other info section */
 .contact-info p a {
-    color: #fff; /* Links in white color */
+    color: #800020; /* Burgundy color for links */
     text-decoration: none;
 }
 
@@ -74,7 +74,7 @@ p {
 
 /* Footer section (if you have one) */
 footer {
-    background-color: #800020;
+    background-color: #800020; /* Burgundy background for footer */
     color: #fff;
     padding: 20px;
     text-align: center;
