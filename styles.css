@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7d0d6; /* Slightly lighter burgundy background */
+    background-color: #F5D1D7; /* Lighter, warm pastel burgundy/pinkish background */
     color: #333; /* Dark text for good contrast */
     margin: 0;
     padding: 0;
@@ -55,7 +55,7 @@ p {
 }
 
 .cta-btn:hover {
-    background-color: #a32033; /* Lighter shade of burgundy for hover effect */
+    background-color: #A32033; /* Lighter shade of burgundy for hover effect */
     color: #fff;
     transform: scale(1.05); /* Slightly grow the button on hover */
 }
