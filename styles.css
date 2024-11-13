@@ -6,11 +6,16 @@
     font-family: 'Poppins', sans-serif; /* Изменен шрифт на Poppins */
 }
 
+body {
+    background-color: #f5f5f5; /* Светлый фон страницы */
+    color: #333;
+}
+
 /* Шапка */
 header {
-    background-color: #333;
+    background-color: #800020; /* Бургунди */
     color: white;
-    padding: 30px 0;
+    padding: 30px 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -27,7 +32,7 @@ header p {
 
 /* Герой-секция */
 .hero {
-    background-color: #A8D5BA; /* Мятный фон */
+    background-color: #F8E1E1; /* Нежно-розовый фон */
     padding: 80px 20px;
     text-align: center;
     color: #333;
@@ -37,9 +42,9 @@ header p {
 }
 
 .hero-text h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 20px;
-    color: #FF6F61; /* Трендовый коралловый цвет */
+    color: #800020; /* Бургунди */
 }
 
 .hero-text p {
@@ -54,35 +59,37 @@ header p {
 }
 
 .cta-btn {
-    background-color: #FF6F61; /* Теплый коралловый */
+    background-color: #800020; /* Бургунди */
     color: white;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
-    margin: 0 10px;
+    margin: 10px;
     font-size: 1.2em;
     transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
 .cta-btn:hover {
-    background-color: #D45B56; /* Темнее коралловый оттенок */
+    background-color: #5c001e; /* Темнее бургунди при наведении */
 }
 
 /* Продукты */
 .products {
     display: flex;
     justify-content: space-around;
-    margin: 50px 0;
-    padding: 0 20px;
+    flex-wrap: wrap;
+    margin: 50px 20px;
 }
 
 .product-card {
     text-align: center;
     width: 30%;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -110,7 +117,7 @@ header p {
 
 /* Подвал */
 footer {
-    background-color: #333;
+    background-color: #800020; /* Бургунди */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -119,4 +126,52 @@ footer {
 
 footer p {
     font-size: 1.1em;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .hero-text h2 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1.1em;
+    }
+
+    .cta-btn {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .hero-text h2 {
+        font-size: 1.8em;
+    }
+
+    .cta-btn {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .product-card {
+        width: 90%;
+    }
 }
