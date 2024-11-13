@@ -35,6 +35,13 @@ p {
     padding: 0 15px;
 }
 
+/* Жирный текст */
+strong {
+    font-weight: bold;
+    font-size: 1.3em; /* Размер для выделенного текста */
+    color: #800020; /* Бургунди */
+}
+
 /* Кнопки (контейнер) */
 .cta-buttons {
     display: flex;
